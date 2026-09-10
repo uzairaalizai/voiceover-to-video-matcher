@@ -1,0 +1,14 @@
+{
+  "name": "scenevault-autocut",
+  "runtime": "python",
+  "repo": "https://github.com/uzairaalizai/voiceover-to-video-matcher",
+  "branch": "scenevault-hosted",
+  "buildCommand": "bash hosted/build.sh",
+  "startCommand": "HF_HUB_OFFLINE=1 uvicorn hosted.server:app --host 0.0.0.0 --port $PORT --workers 1",
+  "plan": "1c-2g",
+  "region": "singapore",
+  "autoDeploy": "no",
+  "envVars": [{"key": "PYTHON_VERSION", "value": "3.11.11"}],
+  "requiredSecret": "STUDIO_PASSWORD",
+  "status": "prepared; billing approval required before service creation"
+}

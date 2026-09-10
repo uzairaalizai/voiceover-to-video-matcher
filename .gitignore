@@ -67,3 +67,8 @@ logs/
 results/
 output/
 *.json
+# Hosted service models, jobs and local credentials
+hosted/models/
+hosted/data/
+hosted/.env
+!hosted/deployment.json
